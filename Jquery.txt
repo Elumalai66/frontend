@@ -1,0 +1,114 @@
+
+1. What is jQuery?
+jQuery is an open-source JavaScript library that simplifies the interactions between an HTML/CSS document, or more precisely the Document Object Model (DOM) and JavaScript. jQuery simplifies HTML document traversing and manipulation, browser event handling, DOM animations, Ajax interactions, and cross-browser JavaScript development.
+
+2. Does jQuery work for both HTML and XML Documents?
+Yes, jQuery is designed to work seamlessly with both HTML and XML documents. The core functionalities of jQuery, such as DOM traversal and manipulation, event handling, and AJAX operations, apply to both HTML and XML.
+
+3. What are jQuery Selectors?
+jQuery selectors select the HTML elements and allow you to manipulate the HTML elements. It selects the HTML elements on a variable parameter such as their name, classes, id, types, attributes, attribute values, etc. All selectors in jQuery are selected using a special sign i.e. dollar sign and parentheses:
+
+$("selector-name")
+Elements Selector: The elements selector selects the element on the basis of its name.
+
+Syntax:
+
+$("h1")
+Id Selector: The id selector selects the element on the basis of its id.
+
+Syntax:
+
+$("#gfg")
+Class Selector: The class selector selects the element on the basis of its class.
+
+Syntax:
+
+$(".GFG")
+
+4. What are the advantages of jQuery?
+It contains a wide range of plug-ins. jQuery allows developers to create plug-ins on top of the JavaScript library.
+Large development community.
+It has good and comprehensive documentation.
+It contains lots of JavaScript libraries and it is easy to use compared to the standard JavaScript.
+jQuery lets users develop Ajax templates with ease, Ajax enables a sleeker interface where actions can be performed on pages without requiring the entire page to be reloaded.
+Being lightweight and a powerful chaining capability makes jQuery more strong.
+
+5. What are the jQuery methods to provide effects?
+Some of methods are listed below which provides the effect:
+
+jQuery toggle() Method
+jQuery slideDown() Method
+jQuery Effect fadeOut() Method
+jQuery fadeToggle() Method
+
+6. Difference between empty(), remove() and, detach() methos in jQuery ?
+jQuery empty() Method: The empty() method removes all child nodes and its content for the selected elements.
+jQuery remove() Method: The remove() method removes all the selected elements including all the text. This method also remove data and all the events of the selected elements.
+jQuery detach() Method: The detach() method removes the selected elements from the DOM tree including its all text and child nodes but it keeps the data and the events. Document Object Model (DOM) is a World Wide Web Consortium standard. This defines for accessing elements in the DOM tree.
+Note: The remove() method is faster than empty() or detach() method.
+
+7. Is jQuery a JavaScript or JSON library file ?
+jQuery is a library of JavaScript file and it consists of DOM event effects and also the Ajax functions. jQuery is alleged to be one JavaScript file.
+
+8. What are the various ajax functions available in Jquery ?
+
+Ajax allows the user to exchange data with a server and update parts of a page without reloading the entire page. Some of the functions of ajax are as follows:
+
+jQuery ajaxSetup() Method: The ajaxSetup() method sets the default values for future AJAX requests.
+jQuery ajax() Method: The ajax() method performs an AJAX request or asynchronous HTTP request.
+jQuery getScript() Method: The getScript() method runs a JavaScript using AJAX HTTP GET request.
+jQuery getJSON() Method: The getJSON() method fetches JSON-encoded data from the server using a GET HTTP request.
+9. Mention the compatible operating systems with jQuery
+jQuery itself is a JavaScript library and, as such, is not tied to any specific operating system. It is compatible with a wide range of operating systems because it runs in the web browser on the client side. Therefore, jQuery is platform-independent, and you can use it on any operating system that supports modern web browsers.
+
+The key factor for jQuery compatibility is the web browser rather than the underlying operating system. jQuery is compatible with major web browsers, including:
+
+Google Chrome
+Mozilla Firefox
+Microsoft Edge
+Safari
+Opera
+
+10. How to include the jQuery library in the ASP.Net project ?
+Download the jQuery library from jQuery.com and include that reference in the asp.net page.
+
+11. Explain bind() vs live() vs delegate() methods in jQuery
+The bind() method does not attach the events to those elements that are added once DOM is loaded whereas live() and delegate() methods attach events to the future elements also. The difference between live() and delegate() methods is that the live() function does not work in chaining. It will work only on a selector or an element while delegate() method will work in chaining.
+
+12. Write the command that gives the version of jQuery ?
+The command $.ui.version returns jQuery UI version.
+
+13. What is jQuery connect ?
+A jQuery connect is a plugin used to connect or bind a function with another function. Connect is used to execute the function from the other function or plugin is executed.
+
+14. How to use connect ?
+Download jQuery connect file from jQuery.com and Include that file in the HTML file. Use $.connect function to connect a function to another function.
+
+15. What is the use of param() method in JQuery ?
+The param() method creates a serialized representation of an object.
+
+16. Difference between $(this) and this in jQuery ?
+The this and $(this) references are same but the difference is “this” is used in the traditional way but when “this” is used with $() then it becomes a jQuery object.
+
+17. Difference between find and children methods ?
+The find() method finds all the descendant elements of the selected element and the children() method finds all the children element related to that selected element.
+
+18. In what scenarios jQuery can be used ?
+jQuery can be used in following scenarios:
+
+Mainly for Animation effects
+Manipulation purpose
+Calling functions on events
+Apply CSS static or dynamic
+
+19. How to read, write and delete cookies in jQuery ?
+We can deal with cookies in jquery using Dough cookie plugin. Dough is easy to use and has powerful features.
+
+Create cookie: $.dough(“cookie_name”, “cookie_value”);
+Read Cookie: $.dough(“cookie_name”);
+Delete cookie: $.dough(“cookie_name”, “remove”);
+
+20. Features of jQuery which are used in web applications ?
+jQuery uses features like Sliding, File uploading and accordian in web applications.
+
+jQuery is an open-source JavaScript library that simplifies the interactions between an HTML/CSS document, It is widely famous with it’s philosophy of “Write less, do more”. You can learn jQuery from the ground up by following this jQuery Tutorial and jQuery Examples.
