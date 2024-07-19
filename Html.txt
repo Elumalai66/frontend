@@ -1,0 +1,245 @@
+
+1. What is HTML?
+HTML stands for HyperText Markup Language. It is used to design web pages using a markup language. HTML is a combination of Hypertext and Markup language. Hypertext defines the link between the web pages. The markup language is used to define the text document within the tag which defines the structure of web pages. HTML is used to structure the website and is therefore used for Web Development.
+
+2. Difference between HTML and XHTML
+S.No.
+HTML
+XHTML
+1.	HTML stands for Hypertext Markup Language.	XHTML stands for Extensible Hypertext Markup Language.
+2.	It was developed by Tim Berners-Lee.	It was developed by W3C i.e.lowercase World Wide Web Consortium.
+3.	It was developed in 1991.	It was released in 2000.
+4.	It is extended from SGML.	It is extended from XML and HTML.
+5.	The format is a document file format.	The format is a markup language.
+6.	All tags and attributes are not necessarily to be in lower or upper case.	In this, every tag and attribute should be in lower case.
+7.	Doctype is not necessary to write at the top.	Doctype is very necessary to write at the top of the file.
+8.	It is not necessary to close the tags in the order they are opened.	It is necessary to close the tags in the order they are opened.
+9.	While using the attributes it is not necessary to mention quotes.  For e.g. <Geeks>.	While using the attributes it is mandatory to mention quotes.  For e.g. <Geeks=”GFG”>.
+10.	The used filename extensions are .html, .htm.	The used Filename extensions are .xhtml, .xht, .xml.
+
+3. What are the various markup languages available?
+HTML: Hypertext Markup Language
+KML: Key whole Markup Language
+MathML: Mathematical Markup Language
+SGML: Standard Generalized Markup Language
+XHTML: eXtensible Hypertext Markup Language
+XML: eXtensible Markup Language
+
+4. What is the difference between HTML and HTML 5?
+HTML
+HTML5
+It didn’t support audio and video without the use of Flash player support.	It supports audio and video controls with the use of <audio> and <video> tags.
+It uses cookies to store temporary data.	It uses SQL databases and application cache to store offline data.
+Does not allow JavaScript to run in the browser.	Allows JavaScript to run in the background. This is possible due to JS Web worker API in HTML5.
+Vector graphics are possible in HTML with the help of various technologies such as VML, Silver-light, Flash, etc.	Vector graphics is additionally an integral part of HTML5 like SVG and canvas.
+It does not allow drag-and-drop effects.	It allows drag-and-drop effects and support target blank attribute.
+Not possible to draw shapes like circles, rectangles, triangles, etc.	HTML5 allows drawing shapes like circles, rectangles, triangles, etc.
+It works with all old browsers.	It is supported by all-new browsers like Firefox, Mozilla, Chrome, Safari, etc.
+Older versions of HTML are less mobile-friendly.	HTML5 language is more mobile-friendly.
+The doctype declaration is too long and complicated.	The doctype declaration is quite simple and easy.
+Elements like nav and header were not present.	New elements for web structure like nav, header, footer, etc.
+Character encoding is long and complicated.	Character encoding is simple and easy.
+It is almost impossible to get the true GeoLocation of users with the help of the browser.	One can track the Geo Location of a user easily by using JS GeoLocation API.
+It can not handle inaccurate syntax.	It is capable of handling inaccurate syntax.
+Attributes like charset, async, and ping are absent in HTML.	Attributes of the charset, async, and ping are a part of HTML 5.
+Please refer to the Difference between HTML and HTML5 article for a detailed description.
+
+5. What is the current version of HTML?
+HTML 5 is the fifth and current version of HTML.
+
+6. What is !DOCTYPE?
+A doctype or document-type declaration is an instruction that tells the web browser about the markup language in which the current page is written. The doctype is not an element or tag, it lets the browser know about the version of or standard of HTML or any other markup language that is being used in the document. The DOCTYPE for HTML5 is case-insensitive and can be written as shown below:
+
+<!DOCTYPE html>
+ Please refer to the HTML Doctypes article for a detailed description.
+
+7. What are elements and tags, and what are the differences between them?
+HTML Tags: Tags are the starting and ending parts of an HTML element. They begin with < symbol and end with > symbol. Whatever is written inside < and > are called tags.
+
+Syntax:
+
+<b> </b>  
+HTML elements: Elements enclose the contents in between the tags. They consist of some kind of structure or expression. It generally consists of a start tag, content, and an end tag.
+
+Syntax:
+
+<b>This is the content.</b>
+ Difference between HTML Tag & HTML Element:
+
+HTML Tag
+HTML Element
+Either opening or closing is used to mark the start or end of an element.	Collection of a start tag, end tag, and its attributes.
+Used to hold the HTML element.	Holds the content.
+Starts with < and ends with >.	Whatever is written within an HTML tag are HTML elements.
+8. What are the various heading tags and their importance?
+There are 6 levels of headings defined by HTML. These six heading elements are H1, H2, H3, H4, H5, and H6; with H1 being at the highest level and H6 at the least.
+
+Importance of Heading:
+
+Search Engines use headings for indexing the structure and content of the webpage.
+Headings are used for highlighting important topics.
+They provide valuable information and tell us about the structure of the document.
+
+9. How to redirect to a particular section of a page using HTML?
+One can use the anchor tag to redirect to a particular section on the same page. You need to add "id attribute" to the section that you want to show and use the same id in href attribute with "#" in the anchor tag. So that On click a particular link, you will be redirected to the section that has the same id mentioned in the anchor tag.
+
+Syntax:
+
+<a href="#home_section">home</a><section id="home_section">    Information About Page</section>
+Example: When the user clicks on the “Contact Us” link, he will be redirected to the “Contact Us section” on the same page.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            width: 100%;
+            height: 400px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to GeeksforGeeks</h2>
+    <p>
+        This is the example of
+        <i>
+            Redirect to a particular section
+            using HTML on same page
+        </i>
+    </p>
+    <a href="#contactUs"> Contact Us </a>
+    <div>
+        <h2>Home section</h2>
+    </div>
+    <div>
+        <h2>About Us section</h2>
+    </div>
+    <div id="contactUs">
+        <h2>Contact Us section </h2>
+    </div>
+    <div>
+        <h2>Team Section</h2>
+    </div>
+</body>
+</html>
+Output:
+
+
+
+Please refer to the How to redirect to a particular section of a page using HTML or jQuery article for a detailed description.
+
+10. What are attributes?
+An attribute is used to provide extra or additional information about an element.
+
+All HTML elements can have attributes. Attributes provide additional information about an element.
+It takes 2 parameters ie., name and value. These define the properties of the element and are placed inside the opening tag of the element. The name parameter takes the name of the property we would like to assign to the element and the value takes the property value or extent of the property names that can be aligned over the element.
+Every name has some value that must be written within quotes.
+11. Are <b> and <strong> tags same? If not, then why?
+HTML strong tag: The strong tag is one of the elements of HTML used in formatting HTML texts. It is used to show the importance of the text by making it bold or highlighting it semantically.
+
+ Syntax:
+
+<strong> Contents... </strong>
+HTML bold tag: The bold tag or <b> is also one of the formatting elements of HTML. The text written under the <b> tag makes the text bold presentationally to draw attention.
+
+Syntax:
+
+<b> Contents... </b>
+The main difference between the <bold> tag & <strong> tag is that the strong tag semantically emphasizes the important word or section of words while the bold tag is just offset text conventionally styled in bold. Click Here to know more.
+
+12. What is the difference between <em> and <i> tags?
+<i> tag: It is one of the elements of HTML which is used in formatting HTML texts. It is used to define a text in technical terms, alternative mood or voice, a thought, etc.
+
+Syntax:
+
+<i> Content... </i>
+<em> tag: It is also one of the elements of HTML used in formatting texts. It is used to define emphasized text or statements.
+
+Syntax:
+
+<em> Content... </em>
+By default, the visual result is the same but the main difference between these two tags is that the <em> tag semantically emphasizes the important word or section of words while the <i> tag is just offset text conventionally styled in italic to show alternative mood or voice. Click Here to know the difference between them.
+
+13. How are comments added in HTML?
+The comment tag (<!– Comment –>) is used to insert comments in the HTML code.
+
+Types of HTML Comments: There are three types of comments in HTML which are:
+
+Single-line comment
+Multi-lines comment
+Using <comment> tag
+
+14. What are the different formats in which colors in HTML can be declared?
+The color of an element can be defined in the following ways:
+
+Built-In Color
+RGB Format
+RGBA Format
+Hexadecimal Notation
+HSL
+HSLA
+Hue: Hue is the degree of the color wheel. Its value lies between 0 to 360 where 0 represents red, 120 represents green and 240 represents blue color.
+Saturation: It takes a percentage value, where 100% represents completely saturated, while 0% represents completely unsaturated (gray).
+Lightness: It takes a percentage value, where 100% represents white, while 0% represents black.
+
+15. How to create a link in HTML?
+A Link is a connection from one Web resource to another. A link has two ends, An anchor and a direction. The link starts at the “source” anchor and points to the “destination” anchor, which may be any Web resource such as an image, a video clip, a sound bite, a program, an HTML document, or an element within an HTML document.
+
+HTML Link Syntax: Links are specified in HTML using the “a” tag.
+
+<a href="url">Link Text<a>
+Explanation:
+
+href: The href attribute is used to specify the destination address of the link used.
+Text link: The text link is the visible part of the link.
+
+16. What is the use of the target attribute in the <link> tag?
+The HTML <link> target Attribute is used to specify the window or a frame where the linked document is loaded. It is not supported by HTML 5.
+
+Syntax:
+
+<link target="_blank|_self|_parent|_top|framename">
+Attribute Values:
+
+_blank: It opens the link in a new window.
+_self: It opens the linked document in the same frame.
+_parent: It opens the linked document in the parent frameset.
+_top: It opens the linked document in the full body of the window.
+framename: It opens the linked document in the named frame.
+
+17. What is the use of alt attribute in images?
+The <img> alt attribute is used to specify the alternate text for an image. It is useful when the image is not displayed. It is used to give alternative information for an image.
+
+Syntax:
+
+<img alt="text">
+
+18. What are the HTML tags used to display a table?
+<table>: It is used to define a table.
+<tr>: It is used to define a row in a table.
+<th>: It is used to define a header cell in a table.
+<td>: It is used to define a cell in a table.
+<caption>: It is used to define the table caption.
+<colgroup>: It is used to define a group of one or more columns in a table for formatting.
+<col>: It is used with <colgroup> element to specify column properties for each column.
+<tbody>: It is used to define a group of body content in a table.
+<thead>: It is used to group the header content in a table.
+<tfooter>: It is used to group the footer content in a table.
+
+19. What are the different types of lists in HTML?
+A list is a record of short pieces of related information used to display the data or any information on web pages in the ordered or unordered form. HTML offers 3 ways for specifying lists of information. All lists must contain one or more list elements. The types of lists that can be used in HTML are:
+
+Unordered List: It will list the items using plain bullets.
+Ordered List: It will use different schemes of numbers to list your items.
+Definition List: It arranges your items in the same way as they are arranged in a dictionary.
+
+20. What is the difference between block and inline elements?
+Every element in HTML has a default display value which depends upon the element type. Block or inline is the default display value for most of the elements.
+
+Block-Level Elements: A block-level element always starts on a new line and stretches out to the left and right as far as it can.
+
+div element: The div element is used as a container for other HTML elements. It has no required attributes. Style, class, and id are the commonly used attributes.
+Inline Elements: An inline element does not start on a new line and only takes up as much width as necessary.
+
+span element: The span element is used as a container for text. It has no required attributes. Style, class, and id are the commonly used attributes. It is typically used to apply styles or scripts to a small portion of text within a larger block of content.
